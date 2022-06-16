@@ -18,7 +18,7 @@ import java.util.List;
 })
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 @Entity
-@Table(name = "device", uniqueConstraints = {@UniqueConstraint(columnNames = {"description"})})
+@Table(name = "devices", uniqueConstraints = {@UniqueConstraint(columnNames = {"description"})})
 public class Device extends AbstractBaseEntity {
     public static final String DELETE = "Device.delete";
 
